@@ -1,0 +1,11 @@
+<h2 mat-dialog-title>¿Estas seguro de Eliminar al heroe?</h2>
+
+<mat-dialog-content>
+  <p>Esta a punto de eliminar un heroe y este paso es irreversible {{data.superhero}}</p>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">No por Dios, no!</button>
+  <button mat-button (click)="onConfirm()" cdkFocusInitial>Ok</button>
+</mat-dialog-actions>
+
